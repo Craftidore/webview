@@ -31,7 +31,7 @@
   :windows []
   :macos []
   (parts
-    (shell `pkg-config --cflags gtk+-3.0 webkit2gtk-4.0`))))
+    (shell `pkg-config --cflags gtk+-3.0 webkit2gtk-4.1`))))
 
 (def more-lflags (case (os/which)
   # :windows "-lole32 -lcomctl32 -loleaut32 -luuid -mwindows" # flags are for mingw
